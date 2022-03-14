@@ -11,8 +11,6 @@ class UsersController < ApplicationController
       redirect_to "/users/#{@user.id}"
     end
 
-
-
   def show
     @user = User.find(params["id"])
   end
