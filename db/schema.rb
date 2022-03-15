@@ -49,7 +49,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_15_030656) do
     t.string "title"
     t.text "description"
     t.date "posted_on"
-    t.string "image"
     t.integer "place_id"
     t.integer "user_id"
     t.datetime "created_at", null: false
