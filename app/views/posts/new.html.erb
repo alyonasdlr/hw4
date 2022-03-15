@@ -1,20 +1,26 @@
 <h1>New Post</h1>
 
 <%= form_with model: @post do |form| %>
-  <p>
+  <div>
     <%= form.label "title" %>
     <%= form.text_field "title" %>
-  </p>
-  <p>
+  </div>
+
+  <div>
+    <%= form.label "Image"%>
+    <%= form.file_field "uploaded_image"%>
+  </div>
+
+  <div>
     <%= form.label "description" %>
     <%= form.text_field "description" %>
-  </p>
-  <p>
+ </div>
+  <div>
     <%= form.label "posted_on" %>
     <%= form.date_field "posted_on" %>
-  </p>
-  <p>
+  </div>
+  <div>
     <%= form.submit %>
-  </p>
+ </div>
   <%= form.hidden_field "place_id" %>
 <% end %>
